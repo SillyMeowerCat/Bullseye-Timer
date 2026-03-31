@@ -17,8 +17,7 @@
     function render() {
         if (!ui) return;
         const live = end ? fmt(end - t0) : t0 ? fmt(Date.now() - t0) : '--';
-        ui.innerHTML = rounds.map((r, i) => cell(`R${i + 1}`, r)).join('')
-            + (t0 ? cell(`Round ${rounds.length + 1}`, live) : '');
+        ui.innerHTML = rounds.map((r, i) => cell(`R${i + 1}`, r)).join('') + (t0 ? cell(`R${rounds.length + 1}`, live) : '');
     }
 
     function onCapture() {
