@@ -44,8 +44,8 @@
         rounds = []; t0 = Date.now(); end = 0; lastCapt = 0;
         if (!document.getElementById('sg-bt-s')) {
             const s = document.createElement('style'); s.id = 'sg-bt-s';
-            s.textContent = '#sg-bt{position:fixed;top:14px;left:14px;z-index:99999;background:#4a2399;color:#fff;border-radius:10px;padding:10px 14px;font:11px/1.5 monospace;pointer-events:none;display:flex;gap:14px;align-items:center}'
-                + '#sg-bt .c{text-align:center}#sg-bt .l{font-size:10px;opacity:.7}#sg-bt .v{font-size:18px;font-weight:700;line-height:1.2}';
+            s.textContent = '#sg-bt{position:fixed;top:14px;left:14px;z-index:99999;background:#4a2399;color:#fff;border-radius:10px;padding:10px 14px;font:11px/1.5 sans-serif;pointer-events:none;display:flex;gap:14px;align-items:center}'
+                + '#sg-bt .c{text-align:center}#sg-bt .l{font-size:10px;font-weight:700;opacity:.7}#sg-bt .v{font-size:18px;font-weight:700;line-height:1.2}';
             document.head.appendChild(s);
         }
         ui = Object.assign(document.createElement('div'), { id: 'sg-bt' });
